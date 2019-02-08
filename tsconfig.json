@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "commonjs",
+        "sourceMap": true,
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "strict": true,
+        "esModuleInterop": true,
+        "pretty": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "noEmitOnError": true,
+        "lib": ["es2015"],
+        "forceConsistentCasingInFileNames": true,
+        "declaration": true,
+        "allowUnreachableCode": false,
+        "allowUnusedLabels": false,
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}

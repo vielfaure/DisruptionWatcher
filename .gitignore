@@ -59,3 +59,9 @@ typings/
 
 # next.js build output
 .next
+
+# Config file
+config.json
+
+# Compiled js files
+dist
