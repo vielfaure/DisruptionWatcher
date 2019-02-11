@@ -1,56 +1,56 @@
 {
-  "name": "disruptionwatcher",
-  "version": "0.1.0",
-  "description": "French public transportation disruption watcher and analyzer",
-  "scripts": {
-    "start": "npm run serve",
-    "build": "npm run build-ts && npm run tslint",
-    "serve": "node dist/index.js",
-    "watch-node": "nodemon dist/index.js",
-    "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
-    "test": "npm run build && \"./node_modules/.bin/jasmine\"",
-    "build-ts": "tsc",
-    "watch-ts": "tsc -w",
-    "tslint": "tslint -c tslint.json -p tsconfig.json",
-    "debug": "npm run build && npm run watch-debug",
-    "serve-debug": "nodemon --inspect dist/index.js",
-    "watch-debug": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run serve-debug\"",
-    "live-reload":"nodemon --watch src --exec ts-node ./src/index.ts"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vielfaure/DisruptionWatcher.git"
-  },
-  "author": "Florent Vielfaure",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/vielfaure/DisruptionWatcher/issues"
-  },
-  "homepage": "https://github.com/vielfaure/DisruptionWatcher#readme",
-  "dependencies": {
-    "make-dir": "^2.0.0",
-    "moment": "^2.24.0",
-    "moment-duration-format": "^2.2.2",
-    "request": "^2.88.0",
-    "request-promise": "^4.2.2",
-    "winston": "^3.2.1",
-    "yargs": "^12.0.5"
-  },
-  "devDependencies": {
-    "@types/jasmine": "^3.3.8",
-    "@types/make-dir": "^1.0.3",
-    "@types/moment": "^2.13.0",
-    "@types/moment-duration-format": "^2.2.2",
-    "@types/node": "^10.12.23",
-    "@types/request": "^2.48.1",
-    "@types/request-promise": "^4.1.42",
-    "@types/winston": "^2.4.4",
-    "@types/yargs": "^12.0.8",
-    "concurrently": "^4.1.0",
-    "jasmine": "^3.3.1",
-    "nodemon": "^1.18.9",
-    "ts-node": "^8.0.2",
-    "tslint": "^5.12.1",
-    "typescript": "^3.3.3"
-  }
+    "name": "disruptionwatcher",
+    "version": "0.1.0",
+    "description": "French public transportation disruption watcher and analyzer",
+    "scripts": {
+        "start": "npm run serve",
+        "build": "npm run build-ts && npm run tslint",
+        "serve": "node dist/index.js",
+        "watch-node": "nodemon dist/index.js",
+        "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run watch-node\"",
+        "test": "npm run build && \"./node_modules/.bin/jasmine\"",
+        "build-ts": "tsc",
+        "watch-ts": "tsc -w",
+        "tslint": "tslint -c tslint.json -p tsconfig.json",
+        "debug": "npm run build && npm run watch-debug",
+        "serve-debug": "nodemon --inspect dist/index.js",
+        "watch-debug": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"cyan.bold,green.bold\" \"npm run watch-ts\" \"npm run serve-debug\"",
+        "live-reload":"nodemon --watch src --exec ts-node ./src/index.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vielfaure/DisruptionWatcher.git"
+    },
+    "author": "Florent Vielfaure",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/vielfaure/DisruptionWatcher/issues"
+    },
+    "homepage": "https://github.com/vielfaure/DisruptionWatcher#readme",
+    "dependencies": {
+        "make-dir": "^2.0.0",
+        "moment": "^2.24.0",
+        "moment-duration-format": "^2.2.2",
+        "request": "^2.88.0",
+        "request-promise": "^4.2.2",
+        "winston": "^3.2.1",
+        "yargs": "^12.0.5"
+    },
+    "devDependencies": {
+        "@types/jasmine": "^3.3.8",
+        "@types/make-dir": "^1.0.3",
+        "@types/moment": "^2.13.0",
+        "@types/moment-duration-format": "^2.2.2",
+        "@types/node": "^10.12.23",
+        "@types/request": "^2.48.1",
+        "@types/request-promise": "^4.1.42",
+        "@types/winston": "^2.4.4",
+        "@types/yargs": "^12.0.8",
+        "concurrently": "^4.1.0",
+        "jasmine": "^3.3.1",
+        "nodemon": "^1.18.9",
+        "ts-node": "^8.0.2",
+        "tslint": "^5.12.1",
+        "typescript": "^3.3.3"
+    }
 }
