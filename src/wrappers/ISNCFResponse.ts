@@ -28,7 +28,7 @@ export interface ISNCFResponse {
     [propName: string]: any;
 }
 
-export interface ISNCFResponseDisruption {
+export interface ISNCFResponseDisruption extends ISNCFResponse {
     status: string;
     disruption_id: string;
     severity: {
@@ -66,7 +66,7 @@ export interface ISNCFResponseDisruption {
     id: string;
 }
 
-export interface ISNCFResponseDisruptionStop {
+export interface ISNCFResponseDisruptionStop extends ISNCFResponse {
     name: string;
     coord: {
         lat: string;
